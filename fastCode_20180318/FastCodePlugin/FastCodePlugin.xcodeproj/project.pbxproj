@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		976D3340205D14D3008EFD73 /* FastCodeStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D333F205D14D3008EFD73 /* FastCodeStruct.m */; };
+		97B54E512053F6520012F949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B54E502053F6520012F949 /* AppDelegate.m */; };
+		97B54E532053F6520012F949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B54E522053F6520012F949 /* Assets.xcassets */; };
+		97B54E562053F6520012F949 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B54E542053F6520012F949 /* MainMenu.xib */; };
+		97B54E592053F6520012F949 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B54E582053F6520012F949 /* main.m */; };
+		97B54E672053F7170012F949 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B54E662053F7170012F949 /* Cocoa.framework */; };
+		97B54E6B2053F7170012F949 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B54E6A2053F7170012F949 /* SourceEditorExtension.m */; };
+		97B54E6E2053F7170012F949 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B54E6D2053F7170012F949 /* SourceEditorCommand.m */; };
+		97B54E732053F7170012F949 /* FastCode.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97B54E642053F7160012F949 /* FastCode.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97B54E7D2053FEC30012F949 /* SourceEditorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B54E7C2053FEC30012F949 /* SourceEditorManager.m */; };
+		97B54E8B205570EC0012F949 /* FastCodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B54E8A205570EC0012F949 /* FastCodeHelper.m */; };
+		97B54E92205573F50012F949 /* FastCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B54E90205573F50012F949 /* FastCodeManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97B54E712053F7170012F949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97B54E442053F6520012F949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97B54E632053F7160012F949;
+			remoteInfo = FastCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97B54E772053F7170012F949 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				97B54E732053F7170012F949 /* FastCode.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		976D333E205D14D3008EFD73 /* FastCodeStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastCodeStruct.h; sourceTree = "<group>"; };
+		976D333F205D14D3008EFD73 /* FastCodeStruct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastCodeStruct.m; sourceTree = "<group>"; };
+		97B54E4C2053F6520012F949 /* FastCodePlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastCodePlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B54E4F2053F6520012F949 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		97B54E502053F6520012F949 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		97B54E522053F6520012F949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97B54E552053F6520012F949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		97B54E572053F6520012F949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B54E582053F6520012F949 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97B54E5A2053F6520012F949 /* FastCodePlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastCodePlugin.entitlements; sourceTree = "<group>"; };
+		97B54E642053F7160012F949 /* FastCode.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FastCode.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B54E662053F7170012F949 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		97B54E692053F7170012F949 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		97B54E6A2053F7170012F949 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		97B54E6C2053F7170012F949 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		97B54E6D2053F7170012F949 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		97B54E6F2053F7170012F949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B54E702053F7170012F949 /* FastCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastCode.entitlements; sourceTree = "<group>"; };
+		97B54E7B2053FEC30012F949 /* SourceEditorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorManager.h; sourceTree = "<group>"; };
+		97B54E7C2053FEC30012F949 /* SourceEditorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorManager.m; sourceTree = "<group>"; };
+		97B54E89205570EC0012F949 /* FastCodeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastCodeHelper.h; sourceTree = "<group>"; };
+		97B54E8A205570EC0012F949 /* FastCodeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastCodeHelper.m; sourceTree = "<group>"; };
+		97B54E8C205571060012F949 /* FastCodeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastCodeDef.h; sourceTree = "<group>"; };
+		97B54E90205573F50012F949 /* FastCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCodeManager.m; sourceTree = "<group>"; };
+		97B54E91205573F50012F949 /* FastCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCodeManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97B54E492053F6520012F949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B54E612053F7160012F949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B54E672053F7170012F949 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97B54E432053F6520012F949 = {
+			isa = PBXGroup;
+			children = (
+				97B54E4E2053F6520012F949 /* FastCodePlugin */,
+				97B54E682053F7170012F949 /* FastCode */,
+				97B54E652053F7170012F949 /* Frameworks */,
+				97B54E4D2053F6520012F949 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97B54E4D2053F6520012F949 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97B54E4C2053F6520012F949 /* FastCodePlugin.app */,
+				97B54E642053F7160012F949 /* FastCode.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97B54E4E2053F6520012F949 /* FastCodePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				97B54E4F2053F6520012F949 /* AppDelegate.h */,
+				97B54E502053F6520012F949 /* AppDelegate.m */,
+				97B54E522053F6520012F949 /* Assets.xcassets */,
+				97B54E542053F6520012F949 /* MainMenu.xib */,
+				97B54E572053F6520012F949 /* Info.plist */,
+				97B54E582053F6520012F949 /* main.m */,
+				97B54E5A2053F6520012F949 /* FastCodePlugin.entitlements */,
+			);
+			path = FastCodePlugin;
+			sourceTree = "<group>";
+		};
+		97B54E652053F7170012F949 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97B54E662053F7170012F949 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97B54E682053F7170012F949 /* FastCode */ = {
+			isa = PBXGroup;
+			children = (
+				97B54E692053F7170012F949 /* SourceEditorExtension.h */,
+				97B54E6A2053F7170012F949 /* SourceEditorExtension.m */,
+				97B54E6C2053F7170012F949 /* SourceEditorCommand.h */,
+				97B54E6D2053F7170012F949 /* SourceEditorCommand.m */,
+				97B54E7B2053FEC30012F949 /* SourceEditorManager.h */,
+				97B54E7C2053FEC30012F949 /* SourceEditorManager.m */,
+				97B54E82205407BA0012F949 /* Tool */,
+				97B54E6F2053F7170012F949 /* Info.plist */,
+				97B54E702053F7170012F949 /* FastCode.entitlements */,
+			);
+			path = FastCode;
+			sourceTree = "<group>";
+		};
+		97B54E82205407BA0012F949 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				97B54E862055708A0012F949 /* FastCode */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		97B54E862055708A0012F949 /* FastCode */ = {
+			isa = PBXGroup;
+			children = (
+				97B54E91205573F50012F949 /* FastCodeManager.h */,
+				97B54E90205573F50012F949 /* FastCodeManager.m */,
+				97B54E89205570EC0012F949 /* FastCodeHelper.h */,
+				97B54E8A205570EC0012F949 /* FastCodeHelper.m */,
+				97B54E8C205571060012F949 /* FastCodeDef.h */,
+				976D333E205D14D3008EFD73 /* FastCodeStruct.h */,
+				976D333F205D14D3008EFD73 /* FastCodeStruct.m */,
+			);
+			path = FastCode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97B54E4B2053F6520012F949 /* FastCodePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B54E5D2053F6520012F949 /* Build configuration list for PBXNativeTarget "FastCodePlugin" */;
+			buildPhases = (
+				97B54E482053F6520012F949 /* Sources */,
+				97B54E492053F6520012F949 /* Frameworks */,
+				97B54E4A2053F6520012F949 /* Resources */,
+				97B54E772053F7170012F949 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97B54E722053F7170012F949 /* PBXTargetDependency */,
+			);
+			name = FastCodePlugin;
+			productName = FastCodePlugin;
+			productReference = 97B54E4C2053F6520012F949 /* FastCodePlugin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97B54E632053F7160012F949 /* FastCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B54E742053F7170012F949 /* Build configuration list for PBXNativeTarget "FastCode" */;
+			buildPhases = (
+				97B54E602053F7160012F949 /* Sources */,
+				97B54E612053F7160012F949 /* Frameworks */,
+				97B54E622053F7160012F949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastCode;
+			productName = FastCode;
+			productReference = 97B54E642053F7160012F949 /* FastCode.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97B54E442053F6520012F949 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "junjie xian";
+				TargetAttributes = {
+					97B54E4B2053F6520012F949 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					97B54E632053F7160012F949 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 97B54E472053F6520012F949 /* Build configuration list for PBXProject "FastCodePlugin" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97B54E432053F6520012F949;
+			productRefGroup = 97B54E4D2053F6520012F949 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97B54E4B2053F6520012F949 /* FastCodePlugin */,
+				97B54E632053F7160012F949 /* FastCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97B54E4A2053F6520012F949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B54E532053F6520012F949 /* Assets.xcassets in Resources */,
+				97B54E562053F6520012F949 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B54E622053F7160012F949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97B54E482053F6520012F949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B54E592053F6520012F949 /* main.m in Sources */,
+				97B54E512053F6520012F949 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B54E602053F7160012F949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B54E92205573F50012F949 /* FastCodeManager.m in Sources */,
+				97B54E8B205570EC0012F949 /* FastCodeHelper.m in Sources */,
+				97B54E6B2053F7170012F949 /* SourceEditorExtension.m in Sources */,
+				97B54E6E2053F7170012F949 /* SourceEditorCommand.m in Sources */,
+				97B54E7D2053FEC30012F949 /* SourceEditorManager.m in Sources */,
+				976D3340205D14D3008EFD73 /* FastCodeStruct.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97B54E722053F7170012F949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97B54E632053F7160012F949 /* FastCode */;
+			targetProxy = 97B54E712053F7170012F949 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97B54E542053F6520012F949 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B54E552053F6520012F949 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97B54E5B2053F6520012F949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		97B54E5C2053F6520012F949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		97B54E5E2053F6520012F949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FastCodePlugin/FastCodePlugin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6T4HPRZY4P;
+				INFOPLIST_FILE = FastCodePlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tencent.FastCodePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97B54E5F2053F6520012F949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FastCodePlugin/FastCodePlugin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6T4HPRZY4P;
+				INFOPLIST_FILE = FastCodePlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tencent.FastCodePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		97B54E752053F7170012F949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FastCode/FastCode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6T4HPRZY4P;
+				INFOPLIST_FILE = FastCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tencent.FastCodePlugin.FastCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		97B54E762053F7170012F949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FastCode/FastCode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6T4HPRZY4P;
+				INFOPLIST_FILE = FastCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tencent.FastCodePlugin.FastCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97B54E472053F6520012F949 /* Build configuration list for PBXProject "FastCodePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B54E5B2053F6520012F949 /* Debug */,
+				97B54E5C2053F6520012F949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B54E5D2053F6520012F949 /* Build configuration list for PBXNativeTarget "FastCodePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B54E5E2053F6520012F949 /* Debug */,
+				97B54E5F2053F6520012F949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B54E742053F7170012F949 /* Build configuration list for PBXNativeTarget "FastCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B54E752053F7170012F949 /* Debug */,
+				97B54E762053F7170012F949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97B54E442053F6520012F949 /* Project object */;
+}
